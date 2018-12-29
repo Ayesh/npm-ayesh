@@ -11,7 +11,7 @@
     "url": "https://github.com/Ayesh/npm-ayesh.git"
   },
   "scripts": {
-    "prepublish": "npm run build",
+    "prepare": "npm run build",
     "build": "node build.js",
     "dev": "npm run build && node ./ayesh.js",
     "lint": "standard"
