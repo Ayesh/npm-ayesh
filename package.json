@@ -1,0 +1,38 @@
+{
+  "name": "ayesh",
+  "version": "1.0.0",
+  "description": "Business/contact card for Ayesh Karunaratne (@ayesh)",
+  "main": "/ayesh.js",
+  "bin": {
+    "ayesh": "./ayesh.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ayesh/npm-ayesh.git"
+  },
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "node build.js",
+    "dev": "npm run build && node ./ayesh.js",
+    "lint": "standard"
+  },
+  "keywords": [
+    "card",
+    "npm",
+    "npm card",
+    "npx",
+    "npx card",
+    "business card"
+  ],
+  "author": "Ayesh Karunarane <ayesh@ayesh.me> (https://ayesh.me)",
+  "license": "MIT",
+  "files": [
+    "ayesh.js",
+    "output"
+  ],
+  "devDependencies": {
+    "boxen": "^2.1.0",
+    "chalk": "^2.4.1",
+    "standard": "^12.0.1"
+  }
+}
