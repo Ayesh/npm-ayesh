@@ -1,0 +1,2 @@
+# npm-ayesh
+`npx ayesh`
