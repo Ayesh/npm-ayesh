@@ -30,7 +30,7 @@
     "ayesh.js",
     "output"
   ],
-  "dependencies": {
+  "devDependencies": {
     "boxen": "^2.1.0",
     "chalk": "^2.4.1",
     "standard": "^12.0.1"
