@@ -19,6 +19,7 @@ const info = {
 	web: "https://aye.sh",
 	contact: "https://ayesh.me/contact",
 	github: "Ayesh",
+	npm: 'ayesh',
 	gpg: "0x2CA18B2097A7429A",
 	ssh: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEUYHEA1oSAnwA0dT1QhJxorqpmxX6ENjAznICIE5yZ9",
 };
