@@ -7,12 +7,6 @@ const path = require('path');
 const newline = '\n';
 
 // Define options for Boxen
-const options = {
-  padding: 1,
-  margin: 1,
-  borderStyle: 'round'
-};
-
 const info = {
 	name: "Ayesh Karunaratne",
 	work: "PHP, Security, Databases, Performance, Architecture",
@@ -24,9 +18,16 @@ const info = {
 	ssh: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEUYHEA1oSAnwA0dT1QhJxorqpmxX6ENjAznICIE5yZ9",
 };
 
+const options = {
+	padding: 1,
+	margin: 1,
+	borderStyle: 'double',
+	title: info.name,
+	titleAlignment: 'center'
+}
+
 // Text + chalk definitions
 const data = {
-  name: chalk.white.bold('             ' + info.name),
   work: chalk.gray(info.work),
   web: chalk.white.bold(    '        Web:  ') + chalk.cyan(info.web),
   contact: chalk.white.bold('    Contact:  ') + chalk.cyan(info.contact),
@@ -35,9 +36,7 @@ const data = {
   card: chalk.white.bold(   '       Card:  ') + chalk.red('npx ' + info.npm)
 };
 
-const output = data.name +
-               newline + newline +
-               data.work + newline + newline +
+const output = data.work + newline +
 			   
 			   data.web + newline +
 			   data.contact + newline +
