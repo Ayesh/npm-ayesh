@@ -2,8 +2,8 @@
 
 const chalk = require('chalk').default
 const boxen = require('boxen').default
-const fs = require('fs')
-const path = require('path')
+const { writeFileSync } = require('fs')
+const { resolve } = require('path')
 const newline = '\n'
 
 // Define options for Boxen
@@ -14,7 +14,7 @@ const info = {
   contact: 'https://aye.sh/contact',
   github: 'Ayesh',
   npm: 'ayesh',
-  gpg: '0x2CA18B2097A7429A',
+  gpg: '0x2CA18B2097A7429A'
 }
 
 const options = {
@@ -36,12 +36,11 @@ const data = {
   card: chalk.white.bold('       Card:  ') + chalk.red('npx ' + info.npm)
 }
 
-const output = data.work + newline +
-
-			   data.web + newline +
-			   data.contact + newline +
-			   data.github + newline +
-			   data.gpg + newline + newline +
+const output = data.work + newline + newline +
+               data.web + newline +
+               data.contact + newline +
+               data.github + newline +
+               data.gpg + newline + newline +
                data.card
 
-fs.writeFileSync(path.join(__dirname, 'output'), chalk.green(boxen(output, options)))
+writeFileSync(resolve(__dirname, 'output'), chalk.green(boxen(output, options)))

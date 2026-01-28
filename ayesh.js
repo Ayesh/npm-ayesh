@@ -2,7 +2,13 @@
 
 'use strict'
 
-const fs = require('fs')
-const path = require('path')
-const output = fs.readFileSync(path.join(__dirname, 'output'), 'utf8')
-console.log(output)
+const { readFileSync } = require('fs')
+const { resolve } = require('path')
+
+try {
+  const output = readFileSync(resolve(__dirname, 'output'), 'utf8')
+  process.stdout.write(output)
+} catch (err) {
+  console.error('Error reading output file:', err.message)
+  process.exit(1)
+}
