@@ -1,6 +1,6 @@
 {
   "name": "ayesh",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Business/contact card for Ayesh Karunaratne (@ayesh)",
   "main": "/ayesh.js",
   "bin": {
