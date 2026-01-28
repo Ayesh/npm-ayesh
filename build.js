@@ -1,7 +1,7 @@
 'use strict'
 
-const chalk = require('chalk')
-const boxen = require('boxen')
+const chalk = require('chalk').default
+const boxen = require('boxen').default
 const fs = require('fs')
 const path = require('path')
 const newline = '\n'
