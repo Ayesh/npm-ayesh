@@ -4,11 +4,11 @@
   "description": "Business/contact card for Ayesh Karunaratne (@ayesh)",
   "main": "/ayesh.js",
   "bin": {
-    "ayesh": "./ayesh.js"
+    "ayesh": "ayesh.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Ayesh/npm-ayesh.git"
+    "url": "git+https://github.com/Ayesh/npm-ayesh.git"
   },
   "scripts": {
     "prepare": "npm run build",
